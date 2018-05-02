@@ -1,0 +1,61 @@
+.header a {
+  text-decoration: none;
+  color: white;
+}
+.menu-options{
+  /*ACA SE LE DA EL FORMATO A LAS OPCIONES*/
+}
+#title{
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.cuestionario {
+  text-align: center;
+}
+
+.cuestionario input {
+  margin: .5em;
+}
+
+
+.header{
+  background-color:#85b1f7;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-style: normal;
+	font-variant: small-caps;
+  padding: 2em;
+  color: white;
+}
+.row{
+  background-color: rgb(206, 198, 189);
+  padding: 1em;
+  margin: 2%;
+} 
+.rojo{
+    color: red;
+}
+
+.item{
+    color: #5a5a5a;
+    padding: 1em;
+    margin:1.5em;
+    list-style:none;
+    border-radius: 1em;
+    background-color: rgb(218, 218, 218);
+}
+
+footer{
+    background: rgb(70, 68, 68);
+    height: 9vh;
+    text-align: center;
+    padding-top: 2vh;
+    color: azure;
+    text-align: center;
+    padding-top: 2vh;
+    z-index: 100;
+}

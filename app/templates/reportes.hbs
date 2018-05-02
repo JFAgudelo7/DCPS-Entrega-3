@@ -1,0 +1,45 @@
+<header class="header">
+  <nav class="navbar">
+    <span class="menu-options">
+      {{#link-to 'newSession'}} Cerrar Sesión {{/link-to}}
+    </span>
+    
+    <h1 id="title">MarketUN</h1>
+   
+  </nav>
+</header>
+
+{{outlet}}
+
+<ul>
+  {{#each model.reportes as |reporte|}}
+      <li class="item">
+           <div class="d-flex justify-content-between">
+              <div class="col-md-4">
+                <strong><h2>Reporte</h2></strong>
+              </div>
+              <div>
+                <h3><strong>Tipo de reporte:</strong> {{reporte.tipo}}</h3>              
+              </div>
+              
+            </div> 
+            <hr>
+            <div class="d-flex justify-content-between">
+            <div class="col-md-4">
+              <h4>{{reporte.nombre}}</h4>              
+              <p><strong>Motivo del reporte: </strong>{{reporte.descripcion}}</p>
+            </div>                    
+            <div class="form-check">
+              <button class="btn btn-danger" {{action "eliminarReporte" reporte.nombre}} value="Eliminar Reporte">ELIMINAR REPORTE</button>
+            </div>
+            <div class="form-check">
+              <button class="btn btn-danger" {{action "eliminarPublicacion" reporte.nombre}} value="Eliminar Publicacion">ELIMINAR PUBLICACIÓN</button>
+            </div>
+          </div> 
+      </li>
+    {{/each}}
+</ul><br><br>
+
+<footer>
+  <h2>Diseño y construccion de productos de software 2018-1 Equipo 12</h2>
+</footer>
